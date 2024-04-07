@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="Iniciar" id="boton">
+    <script>
+        document.getElementById("boton").addEventListener
+            ("click", iniciar);
+        function iniciar (){
+            let vidas = 10
+            let num = Math.floor((Math. random()*10)+1);
+            while(vidas>0){
+                let numU = prompt("Te quedan " + vidas + " vidas. Escribe el número: ");
+                if(numU==num){
+                    alert("¡Felicidades, ganaste! ");
+                    break;
+                }
+                if(numU>num){
+                    alert("Lo siento, el número que pensé es menor");
+                }
+                if(numU<num){
+                    alert("Lo siento, el número que pensé es mayor");
+                }
+                vidas--;
+            }
+            if(vidas==0){
+                alert("Lo siento, perdistes ");
+            }
+        }
+    </script>
+    <h1> <a href="6.html"> Siguiente prática </a></h1>
+</body>
+</html>

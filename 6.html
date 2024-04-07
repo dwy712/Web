@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Test de 5 preguntas</h1>
+    <div id="questions">
+    </div>
+    <div id="result" class="hidden"></div>
+    <script>
+        const questions = [
+            { question: "¿Cúal es el músculo más grande?", answer: "Glúteo" },
+            { question: "¿Cómo se denomina al entrenamiento con peso corporal?", answer: "Calistenia" },
+            { question: "¿En qué tienes que enfocarte para la ganancia muscular?", answer: "Hipertrofia" },
+            { question: "¿Qué macronutriente se necesita para regenerar el tejido múscular?", answer: "Proteína" },
+            { question: "¿Quién es el actual Mr. Olympia de Classic Physique?", answer: "Chris Bumstead" }
+        ];
+
+        function generateQuestions() {
+            const questionsContainer = document.getElementById('questions');
+            questions.forEach((q, index) => {
+                const questionDiv = document.createElement('div');
+                questionDiv.innerHTML = `
+                    <p>${index + 1}. ${q.question}</p>
+                    <input type="text" id="answer${index}">
+                `;
+                questionsContainer.appendChild(questionDiv);
+            });
+        }
+
+        function checkAnswers() {
+            let correctCount = 0;
+            questions.forEach((q, index) => {
+                const userAnswer = document.getElementById(`answer${index}`).value.trim();
+                if (userAnswer.toLowerCase() === q.answer.toLowerCase()) {
+                    correctCount++;
+                    document.getElementById(`answer${index}`).style.backgroundColor = 'lightgreen';
+                } else {
+                    document.getElementById(`answer${index}`).style.backgroundColor = 'lightcoral';
+                }
+            });
+            document.getElementById('result').innerHTML = `Respuestas correctas: ${correctCount} / 5`;
+            document.getElementById('result').classList.remove('hidden');
+        }
+
+        window.onload = function() {
+            generateQuestions();
+            startTimer();
+        };
+    </script>
+    <button onclick="checkAnswers()">Terminar Test</button>
+</body>
+</html>

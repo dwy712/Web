@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Valhalla - Gimnasio</title>
+
+    <script>
+        var resultado = "Antes de acceder a la web te voy a hacer un pequeño cuestionario, espero que no te suponga una gran molestia."
+        window.alert( resultado );//Cuadro de diálogo
+
+        var edad = parseInt(prompt("Dime tu edad"));
+        if (edad >= 18) {window.alert("Eres mayor de edad")}
+        else {window.alert("Eres menor de edad")};
+
+        var x = parseInt(prompt("Dime un número"));
+        var y = parseInt(prompt("Dime otro"));
+        var suma = x + y;
+        var resultado = ("La suma de los dos número es " + suma);
+        window.alert(resultado);//Primera pregunta
+
+        if (confirm ("¿Quieres ir al Blog de Informática del Larra, donde pudimos aprender a como hacer esto?"))
+        {window.open("https://ieslarra-informatica.blogspot.com/")}
+        else
+        {alert("Esta bien nos quedamos aqui")}//Ventana redirigente a otra web
+        
+        var nombre = prompt("Dime tu nombre");
+        var resultado = "Bienvenido a mi página web " + nombre + ", espero que disfrutes de la estancia."
+        window.alert( resultado );//Cuadro de diálogo indicando el acceso
+    </script>
+
+    <style>
+    
+        body {
+            background-image: url(zyzz.jpg);
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #000000;
+            font-family: 'Times New Roman', serif;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+        h2 {
+            font-family: 'Times New Roman', serif;
+            color: #fff;
+            text-align: center;
+            
+        }
+        p {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+            justify-content: space-between;
+            display: flex;
+            margin: 20px;
+        }
+        .map-container, ¨{
+            width: 50%;
+            margin-bottom: 20px;
+        }
+        .schedule-container {
+            width: 50%;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 70%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 4px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        nav {
+            background-color: #000000;
+            padding: 0.5em;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+        section {
+            padding: 2em;
+        }
+        .image-container div {
+            text-align: center;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .image-container img {
+            width: 60%;
+            display: block; 
+            margin: 0 auto; 
+        }
+        a {
+            color:#fff;
+        }
+        .caja {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: #ffffff;
+            background: rgba(87, 10, 10, 0.451);
+        }
+        .solid:hover {
+            transform: scale(1.1);
+        }
+        .solid {
+            transition: transform .1s;
+        }
+        .groove {
+            border-style: groove;
+            border-color: red;
+            border-width: 1px;
+            width:100%;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>&#128305; El Valhalla &#128305;</h1>
+        <p style="font-family: 'Times New Roman', serif"><i>"Build your legacy"</i></p>
+    </header>
+    
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#instalaciones">Instalaciones</a>
+        <a href="#horarios">Horarios</a>
+        <a href="#suplementos">Suplementos</a>
+        <a href="#ropa">Ropa</a>
+    </nav>
+
+    <section id="inicio">
+        <hr>
+        <h2><b>-- Bienvenido a <i><u>El Valhalla</u></i> --</b></h2>
+        <hr>
+        <br>
+        <p class="caja ; groove">¡Bienvenido a "El Valhalla", tu destino épico para la transformación física y el bienestar total! En nuestro gimnasio, te invitamos a embarcarte en una travesía única hacia una versión más fuerte, saludable y valiente de ti mismo. Inspirado por la grandeza de la mitología nórdica, "El Valhalla" es un santuario moderno donde los guerreros y guerreras contemporáneos forjan su camino hacia la excelencia física.</p>
+        <center>
+            <img class="solid" src="hammerstrength.jpg" alt="Imagen del gimnasio" width="650" height="370">
+            <video width="600" height="400" controls>
+            <source src="adhammerstrength.mp4" type="video/mp4">
+            </video>
+        </center>
+    </section>
+
+    <section id="instalaciones">
+        <hr>
+        <h2><b>-- Instalaciones --</b></h2>
+        <hr>
+        <br>
+        <p class="caja ; groove">Nuestras instalaciones están diseñadas para brindarte una experiencia de entrenamiento completa y satisfactoria. Contamos con dos áreas principales: la zona de entrenamiento de fuerza y la zona de cardio.</p> 
+        <br>
+        <p class="caja ; groove">En la zona de entrenamiento de fuerza, encontrarás un amplio y bien equipado espacio destinado a desarrollar tu fuerza muscular. Disponemos de una variedad de máquinas de última generación para trabajar todos los grupos musculares, desde equipos para entrenamiento con pesas libres hasta máquinas multifunción que te permitirán realizar ejercicios específicos. Nuestro equipo está diseñado ergonómicamente para garantizar un entrenamiento seguro y efectivo, y nuestro personal altamente capacitado está siempre disponible para brindarte asesoramiento y ayudarte a optimizar tu rutina de fuerza.</p>
+        <br>
+        <p class="caja ; groove">En la zona de cardio, te ofrecemos una selección completa de equipos diseñados para mejorar tu resistencia cardiovascular y quemar calorías de manera eficiente. Contamos con cintas de correr de última generación, elípticas, bicicletas estáticas y máquinas de remo, todas ellas equipadas con tecnología avanzada para que puedas monitorear tu progreso y personalizar tu entrenamiento. Además, nuestras pantallas individuales te ofrecen entretenimiento mientras te ejercitas, haciendo que cada sesión sea más agradable.</p>
+        <br>
+        <center>
+            <img class="solid" src="hammerstrength2.jpg" alt="Área de pesas" width="650" height="370" >
+            <img class="solid" src="treadmills.jpg" alt="Área de cardio" width="650" height="370">
+        </center>
+    </section>
+
+    <section id="suplementos">
+        <hr>
+        <h2><b>-- Suplementación --</b></h2>
+        <hr>
+        <br>
+        <p class="caja ; groove">Potencia tu rendimiento y alcanza tus metas fitness con nuestra línea de suplementación deportiva de primera calidad. En MyProtein, entendemos que cada entrenamiento cuenta, y es por eso que te ofrecemos los mejores suplementos diseñados para maximizar tus resultados y mejorar tu bienestar general. Haz clic en los links para verlos en detalle.</p>
+        <br>
+        <div class="image-container">
+            <div>
+                <img class="solid" src="proteina.avif" alt="proteina">
+                <p><a href="https://www.myprotein.es/nutrition/protein/whey-protein.list">Proteína</a></p>
+            </div>
+            <div>
+                <img class="solid" src="creatina.avif" alt="creatina">
+                <p><a href="https://www.myprotein.es/nutrition/creatine/creatine-monohydrate.list">Creatina</a></p>
+            </div>
+            <div>
+                <img class="solid" src="aminoacidos.avif" alt="aminoacidos">
+                <p><a href="https://www.myprotein.es/nutrition/amino-acids.list">Aminoácidos</a></p>
+            </div>
+        </div><br>
+        <div class="image-container">
+            <div>
+                <img class="solid" src="preentreno.avif" alt="preentreno">
+                <p><a href="https://www.myprotein.es/nutrition/pre-post-workout/pre-workout.list">Pre-entreno</a></p>
+            </div>
+            <div>
+                <img class="solid" src="controldepeso.avif" alt="controldepeso">
+                <p><a href="https://www.myprotein.es/nutrition/weight-management.list">Control de peso</a></p>
+            </div>
+            <div>
+                <img class="solid" src="energia.avif" alt="energia">
+                <p><a href="https://www.myprotein.es/nutrition/carbohydrates.list">Suplemento energético</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="ropa">
+        <hr>
+        <h2><b>-- Ropa --</b></h2>
+        <hr>
+        <br>
+        <p class="caja ; groove">Descubre el equilibrio perfecto entre estilo y rendimiento con nuestra exclusiva línea de ropa deportiva. Fusionamos la moda con la funcionalidad para ofrecerte prendas que no solo te harán lucir bien, sino que también te llevarán al siguiente nivel en cada sesión de entrenamiento. Haz clic en los links para verlos en detalle.</p>
+        <br>
+        <div class="image-container">
+            <div>
+                <img class="solid" src="ropah.avif" alt="proteina">
+                <p><a href="https://www.myprotein.es/clothing/mens-clothing.list">Ropa de hombre</a></p>
+            </div>
+            <div>
+                <img class="solid" src="ropam.avif" alt="creatina">
+                <p><a href="https://www.myprotein.es/clothing/womens-clothing.list">Ropa de mujer</a></p>
+            </div>
+            <div>
+                <img class="solid" src="accesorio.avif" alt="aminoacidos">
+                <p><a href="https://www.myprotein.es/clothing/soft-accessories.list">Accesorios</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="horarios">
+        <hr>
+        <h2><b>-- Horario y Ubicación --</b></h2>
+        <hr>
+        <br>
+        <div class="container">
+            <div class="map-container">
+                <iframe width="500" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13138602.824480636!2d-22.65106201171876!3d36.48976535146369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd731f8eaa0cf637%3A0xafb76405723bafdb!2sHammer%20Strength!5e0!3m2!1ses!2ses!4v1708276338782!5m2!1ses!2ses" allowfullscreen></iframe>
+            </div>
+            <div class="schedule-container">
+                <div>
+                    <p><b>Hammer Strength</b></p><p>Almendralejo de Jarales</p><p>29649 Mijas (Málaga)</p>
+                <div><p><strong>Lunes a viernes:</strong></p><p>6:00 - 23:00 horas.</p><p><strong>Sábados:</strong></p><p>8:00 - 20:00 horas.</p><p><strong>Domingos y festivos:</strong></p><p>8:00 - 15:00 horas.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <audio id="miAudio" loop>
+        <source src="adrenalina.mp3" type="audio/mp3">
+    </audio>
+    
+    <button id="redirectButton">Ejercicios</button>
+
+    <script>
+        function redirectToAnotherPage() {
+            const otherPageUrl = '1.html';
+            window.location.href = otherPageUrl;
+        }
+    document.getElementById('redirectButton').addEventListener('click', redirectToAnotherPage);
+        document.getElementById('miAudio').play();
+    </script>
+
+</body>
+</html>
